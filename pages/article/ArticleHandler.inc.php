@@ -133,6 +133,7 @@ class ArticleHandler extends Handler {
 		// Citation formats
 		$citationPlugins = PluginRegistry::loadCategory('citationFormats');
 		uasort($citationPlugins, create_function('$a, $b', 'return strcmp($a->getDisplayName(), $b->getDisplayName());'));
+		$citationPlugins = array('ApaCitationPlugin' => $citationPlugins['ApaCitationPlugin']) + $citationPlugins;
 		$templateMgr->assign('citationPlugins', $citationPlugins);
 
 		if (!$galley) {
