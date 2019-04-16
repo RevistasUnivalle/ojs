@@ -30,7 +30,8 @@
 	<!-- common -->
 
 	<!-- Journal Management -->
-
+       <!-- ORCID Plugin -->
+         <message key="plugins.generic.orcidProfile.connect">Perfil ORCID</message>
 	<!-- Categories -->
 	<message key="navigation.categories">Categorías</message>
 	<message key="navigation.categories.browse">Examinar</message>
